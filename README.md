@@ -4,7 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonne Archive</title>
     <style>
-        /* 배경 설정 */
+        /* 1. 깃허브 기본 테마 요소(글씨, 선) 숨기기 */
+        header, footer, .sidebar, .header-inner {
+            display: none !important;
+        }
+
+        /* 배경 및 기본 설정 */
         body {
             margin: 0;
             padding: 0;
@@ -16,7 +21,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
         }
 
-        /* 16:9 비율의 사파리 창 디자인 */
+        /* 16:9 비율의 사파리 창 */
         .safari-window {
             width: 90vw; 
             aspect-ratio: 16 / 9; 
@@ -27,7 +32,8 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            border: 0.5px solid rgba(0,0,0,0.1);
+            /* 2. 사파리 테두리 외의 선 제거 */
+            border: none; 
         }
 
         /* 상단 툴바 */
@@ -37,6 +43,7 @@
             display: flex;
             align-items: center;
             padding: 0 16px;
+            /* 3. 툴바 하단 선 (원치 않으시면 'none'으로 변경 가능) */
             border-bottom: 1px solid #d1d1d1;
             position: relative;
             flex-shrink: 0;
@@ -54,11 +61,11 @@
             height: 12px;
             border-radius: 50%;
         }
-        .red { background-color: #ff5f56; border: 0.5px solid #e0443e; }
-        .yellow { background-color: #ffbd2e; border: 0.5px solid #dea123; }
-        .green { background-color: #27c93f; border: 0.5px solid #1aab29; }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
 
-        /* 주소창 */
+        /* 주소창 (sonne math로 변경) */
         .address-bar {
             margin: 0 auto;
             background-color: #ffffff;
@@ -69,11 +76,11 @@
             align-items: center;
             justify-content: center;
             font-size: 13px;
-            color: #666;
+            color: #333;
             border: 1px solid #d1d1d1;
         }
 
-        /* 콘텐츠 영역 */
+        /* 본문 영역 */
         .content {
             flex-grow: 1;
             display: flex;
@@ -112,7 +119,7 @@
                 <div class="dot green"></div>
             </div>
             <div class="address-bar">
-                <span>yinseon.github.io</span>
+                <span>sonne math</span>
             </div>
         </div>
         
