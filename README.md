@@ -16,11 +16,11 @@
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
         }
 
-        /* 16:9 비율을 유지하는 사파리 창 */
+        /* 16:9 비율의 사파리 창 디자인 */
         .safari-window {
-            width: 90vw; /* 화면 너비의 90% */
-            aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
-            max-width: 1200px;
+            width: 90vw; 
+            aspect-ratio: 16 / 9; 
+            max-width: 1100px;
             background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 30px 60px rgba(0,0,0,0.25);
@@ -32,7 +32,7 @@
 
         /* 상단 툴바 */
         .toolbar {
-            height: 50px;
+            height: 45px;
             background: linear-gradient(to bottom, #f6f6f6, #ebebeb);
             display: flex;
             align-items: center;
@@ -58,22 +58,22 @@
         .yellow { background-color: #ffbd2e; border: 0.5px solid #dea123; }
         .green { background-color: #27c93f; border: 0.5px solid #1aab29; }
 
-        /* 주소창 (repository_for 삭제) */
+        /* 주소창 */
         .address-bar {
             margin: 0 auto;
             background-color: #ffffff;
-            width: 50%;
-            height: 30px;
+            width: 45%;
+            height: 26px;
             border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
-            color: #333;
+            font-size: 13px;
+            color: #666;
             border: 1px solid #d1d1d1;
         }
 
-        /* 본문 중앙 정렬 */
+        /* 콘텐츠 영역 */
         .content {
             flex-grow: 1;
             display: flex;
@@ -85,20 +85,20 @@
         /* 다운로드 버튼 (모서리가 둥근 직사각형) */
         .download-btn {
             display: inline-block;
-            padding: 20px 60px;
+            padding: 18px 50px;
             background-color: #007aff;
             color: white;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
-            border-radius: 14px;
+            border-radius: 12px;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.2);
         }
 
         .download-btn:hover {
             background-color: #0063cc;
-            transform: scale(1.05);
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -118,7 +118,7 @@
         
         <div class="content">
             <a href="2026 diary.pdf" download class="download-btn">
-                Download 2026 Diary
+                다운로드
             </a>
         </div>
     </div>
